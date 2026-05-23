@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="Minipresenter" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/transition.js"></script>
+    <style>
+        h1{
+            font-size: 200px;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 90px;
+            text-align: center;
+        }
+       
+        button{
+            width: 300px;
+            height: 150px;
+            margin: 20px;
+            
+        }
+
+        div.bottomcenter {
+            text-align: center;
+            button {font-family: 'Arial'; font-size: 50px;}
+        }
+
+        body {
+    transition: opacity 0.3s;
+}
+
+.fade-out {
+    opacity: 0;
+}
+    </style>   
 </head>
+
 <body>
     <h1>Mini presenter</h1>
     <h3>proyecto de prueba</h3>
-    <button>Ingresar</button>
+    <div class = bottomcenter>
+        <button onclick="fadeToPage('projection.html')">INGRESAR</button>
+    </div>
 </body>
 </html>
