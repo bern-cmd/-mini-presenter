@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+   
+}
+
+.panel {
+    width: 70%;
+    height: 60vh;
+    border: 1px solid white;
+    background-color: brown
+}
+.letra {
+    width: 30%;
+    height: 60vh;
+    border: 1px solid white;
+    background-color: rgb(142, 165, 42)
+}
+
+.diapositiva {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(56, 134, 207)
+}
