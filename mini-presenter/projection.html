@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyector de Letras</title>
     <link rel="stylesheet" href="/mini-presenter/css/projection.css">
 </head>
-
 <body>
-    <h1>
-        <div class="container">
 
-            <div class="letra">
-            Letras
-            </div>
+    <div id="contenedor">
 
-            <div class="panel">
-            Panel
-            </div>
+        <div id="lista-canciones">
+
+            <h2>Letras</h2>
             
+            <ul id="canciones"></ul>
         </div>
 
-        <div class="diapositiva">
-            Diapositiva
+        <div id="panel">
+            <h2>Panel</h2>
+
+                <div id="pantalla-preview">
+                    <div id="contenido-preview">
+                         Selecciona una diapositiva
+                    </div>
+            </div>
+
+            <button onclick="abrirProyeccion()">
+                 Abrir proyección
+            </button>
         </div>
-    </h1>
+
+        <div id="diapositivas">
+            <h2>Diapositiva</h2>
+
+            <div id="slides"></div>
+        </div>
+
+    </div>
+
+    <script src="/mini-presenter/js/projection.js"></script>
+
 </body>
 </html>
